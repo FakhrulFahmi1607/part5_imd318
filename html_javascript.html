@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>html javascript.com</title>
+</head>
+<body>
+	<center><iframe src="https://free.timeanddate.com/clock/i9offv9b/n5090/tlmy40/fn15/fs15/ftbi/bo2/tt0/td2/th2/ta1/tb4" frameborder="0" width="172" height="38"></iframe></center>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.708082280751!2d102.27176457555878!3d5.755091894227301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68f001d96c83d%3A0xf0958e9bb42d4873!2sZul%20homestay!5e0!3m2!1sen!2smy!4v1734227249203!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<h2>Javascipt help to change the content</h2>
+<p id="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<button type="button" onclick='document.getElementById("content").innerHTML = "Hello Javascript"'>Click to change the content</button>
+
+<h2>Javascript help to change the style</h2>
+
+<p id="style 1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<script>
+	function mystyle()
+	{
+		document.getElementById("style 1").style.fontSize="20px";
+		document.getElementById("style 1").style.fontFamily="Papyrus";
+		document.getElementById("style 1").style.color="black";
+		document.getElementById("style 1").style.backgroundColor="yellow";
+	}
+</script>
+
+<button type="button" onclick="mystyle()">Click Button Here</button>
+
+
+<h2>Javascript change the attributes & image attributes</h2>
+
+<script>
+	function capybara(a)
+
+	{
+		var pic; 
+		 if(a==0)
+		 {
+		 	pic="visual_image/capyslay.jpg"
+		 }
+		 else
+		 {
+		 	pic="visual_image/capycute.jpg"
+		 }
+		 document.getElementById('image').src=pic;
+	}
+</script>
+
+<img src="visual_image/capyslay.jpg" id="image" width="100" height="100">
+
+<p>
+
+<button type="button" onclick="capybara(0)">CapyCute</button>
+<button type="button" onclick="capybara(1)">CapySlay</button>
+
+<h2>Popup Window = Alert Box</h2>
+
+<button onclick="MyAlertBox()">Click Here</button>
+
+<script>
+	function MyAlertBox()
+	{
+		alert("SAMEKOM ! \n Ceritanya Begini pada tahun 92 tu sebelum tahun 93")
+	}
+</script>
+
+<script>
+	{
+		alert("SAMEKOM ! \n MAT DATANG")
+	}
+</script>
+
+</body>
+</html>
